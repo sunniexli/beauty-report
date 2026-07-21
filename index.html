@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深圳响当当 美妆客户运营深度分析 v7 (7.13-7.19)</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'PingFang SC','Microsoft YaHei',sans-serif;background:#F5F7FA;color:#333;line-height:1.5}
+.container{max-width:1500px;margin:0 auto;padding:10px}
+.header{background:linear-gradient(135deg,#1a237e 0%,#296BEF 100%);color:#fff;padding:14px 18px;border-radius:8px;margin-bottom:6px}
+.header h1{font-size:15px;margin-bottom:2px}
+.header .meta{display:flex;gap:5px;flex-wrap:wrap;font-size:9px;opacity:.9}
+.header .tag{display:inline-block;background:rgba(255,255,255,.2);padding:1px 4px;border-radius:3px}
+.section{background:#fff;border-radius:6px;padding:8px 10px;margin-bottom:5px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.section-title{font-size:11px;font-weight:700;color:#296BEF;margin-bottom:4px;padding-bottom:2px;border-bottom:2px solid #EEF4FF;display:flex;align-items:center;gap:3px}
+.section-title .icon{width:14px;height:14px;border-radius:2px;background:#296BEF;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700}
+table{width:100%;border-collapse:collapse;margin:2px 0;font-size:8.5px}
+th{background:#296BEF;color:#fff;padding:2px 3px;text-align:left;font-weight:500;white-space:nowrap;font-size:8px}
+td{padding:2px 3px;border-bottom:1px solid #ECECEC}
+tr:hover{background:#F8FAFF}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.pos{color:#2E7D32;font-weight:600}
+.neg{color:#C62828;font-weight:600}
+.insight{background:#F8FAFF;border-radius:3px;padding:4px 6px;margin:3px 0;font-size:8.5px;line-height:1.4}
+.insight b{color:#296BEF}
+.insight-red{background:#FFF5F5;border-left:3px solid #C62828;border-radius:3px;padding:4px 6px;margin:3px 0;font-size:8.5px;line-height:1.4}
+.insight-green{background:#F0FFF0;border-left:3px solid #2E7D32;border-radius:3px;padding:4px 6px;margin:3px 0;font-size:8.5px;line-height:1.4}
+.suggestion{background:#FFF8E6;border-left:3px solid #FF8F00;border-radius:3px;padding:4px 6px;margin:3px 0;font-size:8.5px;line-height:1.4}
+.suggestion b{color:#E65100}
+.kpi-card{background:#F8FAFF;border-radius:4px;padding:5px 6px;text-align:center;border:1px solid #EEF4FF}
+.kpi-card .label{font-size:7.5px;color:#888;margin-bottom:1px}
+.kpi-card .value{font-size:13px;font-weight:700;color:#296BEF}
+.kpi-card .sub{font-size:7.5px;margin-top:1px}
+.kpi-card .vs{font-size:7px;color:#888;margin-top:1px}
+.grid-4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:3px}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px}
+.scroll{max-height:340px;overflow-y:auto}
+.dim-hdr{background:#EEF4FF;font-weight:700;color:#296BEF;font-size:8.5px;padding:2px 3px}
+.lite{opacity:.55;font-size:7.5px}
+.note{font-size:7.5px;color:#999;margin-top:2px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<h1>深圳响当当 · 美妆客户运营深度分析</h1>
+<div class="meta">
+<span>📅 2026-07-13 ~ 2026-07-19（7天）</span>
+<span>🏷️ <span class="tag">美护</span><span class="tag">本土美妆</span><span class="tag">竞价口径</span><span class="tag">客户简称维度</span></span>
+</div>
+</div>
+
+<!-- ===== Part 1: 整体数据 ===== -->
+<div class="section">
+<div class="section-title"><span class="icon">1</span> 整体数据</div>
+<div class="grid-4" style="margin-bottom:3px">
+<div class="kpi-card"><div class="label">日均消耗(万/天)</div><div class="value">17.28</div><div class="sub neg">环比 -22.5%</div></div>
+<div class="kpi-card"><div class="label">有消耗客户简称数</div><div class="value">45</div><div class="sub">上周44个</div></div>
+<div class="kpi-card"><div class="label">CTR</div><div class="value">1.91%</div><div class="sub">环比 -0.9%</div><div class="vs">本土美妆1.60% <span class="pos">+0.31pp ✅</span></div></div>
+<div class="kpi-card"><div class="label">ROI</div><div class="value">1.442</div><div class="sub pos">环比 +4.6%</div><div class="vs">本土美妆1.788 <span class="neg">-0.346 🔴</span></div></div>
+</div>
+<div class="grid-4">
+<div class="kpi-card"><div class="label">日耗≥3万(S级)</div><div class="value">1</div><div class="sub">M3</div></div>
+<div class="kpi-card"><div class="label">日耗1-3万(A级)</div><div class="value">5</div><div class="sub">卡姿兰/BABI/雏菊/丸美/欧伯雅</div></div>
+<div class="kpi-card"><div class="label">日耗0.3-1万(B级)</div><div class="value">4</div><div class="sub">柏瑞美/美尚/阿敏/浙江汇都</div></div>
+<div class="kpi-card"><div class="label">日耗0.05-0.3万(C级)</div><div class="value">8</div><div class="sub">含新起量客户</div></div>
+</div>
+<div class="insight-red"><b>🔴</b> CTR高于本土美妆但ROI低于本土美妆0.346，「高点击低转化」突出。S级仅1个品牌，梯队断层严重。</div>
+</div>
+
+<!-- ===== Part 2: 新起量客户 ===== -->
+<div class="section">
+<div class="section-title"><span class="icon">2</span> 🚀 新起量客户（上周无消耗+环比>50%）vs 更高层级Benchmark</div>
+<div style="font-size:8px;color:#888;margin-bottom:2px">【定义】上周无消耗本周有消耗 OR 环比增速>50%且日耗>0.05万。牵引目标：比本品牌所在层级高一层级的赛道客户简称维度均值。</div>
+<div class="scroll">
+<table>
+<thead><tr><th>品牌</th><th>当前层级</th><th>对标层级</th><th class="num">日均消耗<br>(万)</th><th class="num">素材数</th><th class="num">新广告数</th><th class="num">重复度%</th><th class="num">CTR%</th><th class="num">3秒完播%</th><th class="num">ROI</th></tr></thead>
+<tbody>
+<tr style="background:#FFF8E6">
+<td><b>雏菊的天空</b></td><td>A级</td><td>→S级</td>
+<td class="num">1.637</td>
+<td class="num">1,407 <span class="lite">vs6,440</span></td>
+<td class="num">107 <span class="lite">vs680</span></td>
+<td class="num pos">34.7 <span class="lite">vs39.9</span></td>
+<td class="num pos">2.77 <span class="lite">vs1.98</span></td>
+<td class="num pos">51.8 <span class="lite">vs43.5</span></td>
+<td class="num neg">1.17 <span class="lite">vs1.73</span></td></tr>
+<tr>
+<td><b>百雀羚</b></td><td>C级</td><td>→B级</td>
+<td class="num">0.178</td>
+<td class="num">344 <span class="lite">vs801</span></td>
+<td class="num pos">84 <span class="lite">vs63</span></td>
+<td class="num pos">31.7 <span class="lite">vs37.3</span></td>
+<td class="num neg">0.94 <span class="lite">vs2.23</span></td>
+<td class="num pos">52.5 <span class="lite">vs39.3</span></td>
+<td class="num pos">1.62 <span class="lite">vs1.61</span></td></tr>
+<tr>
+<td><b>武汉臻平百货</b></td><td>C级</td><td>→B级</td>
+<td class="num">0.184</td>
+<td class="num">196 <span class="lite">vs801</span></td>
+<td class="num pos">67 <span class="lite">vs63</span></td>
+<td class="num neg">60.8 <span class="lite">vs37.3</span></td>
+<td class="num">2.14 <span class="lite">vs2.23</span></td>
+<td class="num pos">48.0 <span class="lite">vs39.3</span></td>
+<td class="num">—</td></tr>
+<tr>
+<td><b>兰奈儿</b></td><td>C级</td><td>→B级</td>
+<td class="num">0.070</td>
+<td class="num">66 <span class="lite">vs801</span></td>
+<td class="num">3 <span class="lite">vs63</span></td>
+<td class="num neg">50.0 <span class="lite">vs37.3</span></td>
+<td class="num neg">1.07 <span class="lite">vs2.23</span></td>
+<td class="num neg">35.0 <span class="lite">vs39.3</span></td>
+<td class="num neg">1.29 <span class="lite">vs1.61</span></td></tr>
+<tr>
+<td><b>上海家化</b></td><td>C级</td><td>→B级</td>
+<td class="num">0.064</td>
+<td class="num">148 <span class="lite">vs801</span></td>
+<td class="num">9 <span class="lite">vs63</span></td>
+<td class="num pos">18.2 <span class="lite">vs37.3</span></td>
+<td class="num">1.69 <span class="lite">vs2.23</span></td>
+<td class="num neg">25.9 <span class="lite">vs39.3</span></td>
+<td class="num neg">0.96 <span class="lite">vs1.61</span></td></tr>
+<tr>
+<td><b>海安框外人</b></td><td>C级</td><td>→B级</td>
+<td class="num">0.062</td>
+<td class="num">53 <span class="lite">vs801</span></td>
+<td class="num">2 <span class="lite">vs63</span></td>
+<td class="num pos">24.6 <span class="lite">vs37.3</span></td>
+<td class="num">1.69 <span class="lite">vs2.23</span></td>
+<td class="num pos">39.7 <span class="lite">vs39.3</span></td>
+<td class="num">—</td></tr>
+</tbody>
+</table>
+</div>
+<div class="insight"><b>📌 牵引解读</b>：雏菊的天空素材质量（3秒完播51.8%/CTR 2.77%）已达到S级水平✅，但素材量和新广告数差距大→需加大放量力度。百雀羚重复度31.7%✅+ROI 1.62✅已达到B级水平，可牵引向A级目标。<b>武汉臻平重复度60.8%🔴、兰奈儿各项全面落后🔴→需先解决素材差异化和质量基础问题。</b></div>
+</div>
+
+<!-- ===== Part 3: 素材数据复盘（18项指标） ===== -->
+<div class="section">
+<div class="section-title"><span class="icon">3</span> 素材数据复盘（18项指标体系）</div>
+<div class="note">响当当整体=有投放客户by客户简称维度均值（素材数/新广告/指纹数/消耗ID/曝光ID/新建ID取客户均值，其余取整体加权均值）；赛道头部=日均≥3万客户简称维度均值；护肤/彩妆=对应品类客户简称维度均值（日耗≥0.05万）</div>
+
+<table>
+<thead><tr><th colspan="6" class="dim-hdr">勤奋度（8项）</th></tr>
+<tr><th class="num">#</th><th>指标</th><th class="num">响当当整体</th><th class="num">环比</th><th class="num">赛道头部</th><th class="num">护肤</th><th class="num">彩妆</th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td>周在投素材数</td><td class="num">591.6</td><td class="num pos">+5.1%</td><td class="num">920.1</td><td class="num">234.5</td><td class="num">226.5</td></tr>
+<tr><td class="num">2</td><td>周新广告数量(首次曝光)</td><td class="num">50.6</td><td class="num pos">+12.9%</td><td class="num">97.1</td><td class="num">22.6</td><td class="num">22.2</td></tr>
+<tr><td class="num">3</td><td>日均新建创意指纹数(TID)</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
+<tr><td class="num">4</td><td>日均天有消耗创意指纹数(个)</td><td class="num">1,560.7</td><td class="num pos">+1.8%</td><td class="num">2,826.6</td><td class="num">738.8</td><td class="num">678.4</td></tr>
+<tr><td class="num">5</td><td>有消耗创意重复度TID(%)</td><td class="num">40.04</td><td class="num">+0.7%</td><td class="num">39.90</td><td class="num">35.92</td><td class="num">35.11</td></tr>
+<tr><td class="num">6</td><td>日均消耗创意唯一性ID数</td><td class="num">1,550.4</td><td class="num pos">+2.1%</td><td class="num">2,641.4</td><td class="num">717.4</td><td class="num">657.4</td></tr>
+<tr><td class="num">7</td><td>日均曝光创意唯一性ID数</td><td class="num">2,137.9</td><td class="num pos">+3.6%</td><td class="num">3,525.5</td><td class="num">945.1</td><td class="num">899.5</td></tr>
+<tr><td class="num">8</td><td>日均新建创意唯一性ID数</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
+</tbody>
+</table>
+
+<table>
+<thead><tr><th colspan="6" class="dim-hdr">素材质量-过程指标（6项）</th></tr>
+<tr><th class="num">#</th><th>指标</th><th class="num">响当当整体</th><th class="num">环比</th><th class="num">赛道头部</th><th class="num">护肤</th><th class="num">彩妆</th></tr></thead>
+<tbody>
+<tr><td class="num">9</td><td>CTR(%)</td><td class="num pos">1.91</td><td class="num neg">-0.9%</td><td class="num">1.98</td><td class="num">2.57</td><td class="num">2.28</td></tr>
+<tr><td class="num">10</td><td>视频3秒完播率(%)</td><td class="num neg">36.32</td><td class="num neg">-3.9% 🔴</td><td class="num">43.54</td><td class="num">44.91</td><td class="num">42.90</td></tr>
+<tr><td class="num">11</td><td>10秒完播率(%)</td><td class="num">12.71</td><td class="num neg">-6.6% 🔴</td><td class="num">14.17</td><td class="num">12.66</td><td class="num">12.81</td></tr>
+<tr><td class="num">12</td><td>平均播放时长(秒)</td><td class="num neg">8.68</td><td class="num neg">-5.5% 🔴</td><td class="num">10.70</td><td class="num">11.04</td><td class="num">10.19</td></tr>
+<tr><td class="num">13</td><td>直播漏斗进播率(%)</td><td class="num pos">1.75</td><td class="num neg">-22.6% 🔴</td><td class="num">0.78</td><td class="num">0.63</td><td class="num">0.75</td></tr>
+<tr><td class="num">14</td><td>0曝光广告占比</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
+</tbody>
+</table>
+
+<table>
+<thead><tr><th colspan="6" class="dim-hdr">结果指标（4项）</th></tr>
+<tr><th class="num">#</th><th>指标</th><th class="num">响当当整体</th><th class="num">环比</th><th class="num">赛道头部</th><th class="num">护肤</th><th class="num">彩妆</th></tr></thead>
+<tbody>
+<tr><td class="num">15</td><td>创意指纹消耗>10k的数量</td><td class="num">0.50</td><td class="num neg">-19.0% 🔴</td><td class="num">10.59</td><td class="num">1.44</td><td class="num">1.67</td></tr>
+<tr><td class="num">16</td><td>创意指纹条均消耗TID(元)</td><td class="num neg">41.50</td><td class="num neg">-19.5% 🔴</td><td class="num">131.96</td><td class="num">81.05</td><td class="num">90.88</td></tr>
+<tr><td class="num">17</td><td>ROI</td><td class="num neg">1.442</td><td class="num pos">+4.6%</td><td class="num">1.73</td><td class="num">1.88</td><td class="num">1.87</td></tr>
+<tr><td class="num">18</td><td>日均消耗(万元)</td><td class="num">0.52</td><td class="num neg">-22.5% 🔴</td><td class="num">10.72</td><td class="num">1.89</td><td class="num">2.05</td></tr>
+</tbody>
+</table>
+
+<div class="insight-red"><b>🔴 核心总结</b>：18项指标中与头部差距最大的Top3——①<b>3秒完播率</b>36.3% vs 头部43.5%（-7.2pp），环比再降-3.9%；②<b>ROI</b>1.442 vs 头部1.73（-0.29）；③<b>条均消耗</b>41.5元 vs 头部132.0元（-90.5元，仅头部31.4%）。重复度40.0%≈头部39.9%✅和CTR 1.91%≈头部1.98%✅表现良好，但完播率+条均消耗短板拖累全链ROI。</div>
+</div>
+
+<!-- ===== Part 4: 品牌18项 vs 头部Benchmark ===== -->
+<div class="section">
+<div class="section-title"><span class="icon">4</span> 品牌级18项指标 vs 头部Benchmark（客户简称维度均值）</div>
+<div class="note">素材数/新广告/指纹数/消耗ID/曝光ID取日均；头部Benchmark=日均≥3万客户简称维度均值（日均化）；🟢≥头部 🟡≈头部85%~100% 🔴<头部85%；重复度反向：🟢≤头部</div>
+<div class="scroll">
+<table>
+<thead><tr><th rowspan="2">品牌</th><th rowspan="2">层级</th><th rowspan="2" class="num">日均<br>消耗<br>(万)</th>
+<th colspan="5" style="text-align:center;background:#EEF4FF;font-size:8px">勤奋度</th>
+<th colspan="6" style="text-align:center;background:#EEF4FF;font-size:8px">素材质量-过程</th>
+<th colspan="4" style="text-align:center;background:#EEF4FF;font-size:8px">结果</th></tr>
+<tr style="font-size:7px">
+<th class="num">日均<br>素材</th><th class="num">日均<br>新广告</th><th class="num">日均<br>指纹</th><th class="num">重复度</th><th class="num">日均<br>消耗ID</th>
+<th class="num">CTR</th><th class="num">3秒<br>完播</th><th class="num">10秒<br>完播</th><th class="num">播放<br>时长</th><th class="num">进播率</th><th class="num">日均<br>曝光ID</th>
+<th class="num">指纹<br>>10k</th><th class="num">条均<br>消耗</th><th class="num">ROI</th><th class="num">日均<br>消耗</th></tr></thead>
+<tbody>
+<!-- 头部均值行 -->
+<tr style="background:#EEF4FF;font-weight:700;font-size:7.5px"><td>赛道头部均值</td><td>S级</td><td class="num">10.72</td>
+<td class="num">920</td><td class="num">97</td><td class="num">2,827</td><td class="num">39.9</td><td class="num">2,641</td>
+<td class="num">1.98</td><td class="num">43.5</td><td class="num">14.2</td><td class="num">10.7</td><td class="num">0.78</td><td class="num">3,526</td>
+<td class="num">10.6</td><td class="num">132</td><td class="num">1.73</td><td class="num">10.72</td></tr>
+
+<tr><td><b>M3</b></td><td>S</td><td class="num">4.17</td>
+<td class="num neg">609 🔴</td><td class="num neg">72 🔴</td><td class="num neg">1,434 🔴</td><td class="num pos">37.6 🟢</td><td class="num neg">1,303 🔴</td>
+<td class="num pos">2.57 🟢</td><td class="num neg">35.2 🔴</td><td class="num neg">13.8 🟡</td><td class="num neg">8.82 🔴</td><td class="num neg">0.26 🔴</td><td class="num neg">1,683 🔴</td>
+<td class="num neg">7 🔴</td><td class="num neg">81.7 🔴</td><td class="num neg">1.67 🟡</td><td class="num neg">4.17 🔴</td></tr>
+
+<tr><td><b>卡姿兰</b></td><td>A</td><td class="num">2.68</td>
+<td class="num neg">233 🔴</td><td class="num neg">8 🔴</td><td class="num neg">901 🔴</td><td class="num neg">50.4 🔴</td><td class="num neg">811 🔴</td>
+<td class="num neg">1.61 🔴</td><td class="num neg">31.6 🔴</td><td class="num neg">9.1 🔴</td><td class="num neg">6.06 🔴</td><td class="num pos">0.97 🟢</td><td class="num neg">1,050 🔴</td>
+<td class="num neg">3 🔴</td><td class="num neg">93.5 🔴</td><td class="num pos">2.16 🟢</td><td class="num neg">2.68 🔴</td></tr>
+
+<tr><td><b>BABI</b></td><td>A</td><td class="num">2.04</td>
+<td class="num neg">292 🔴</td><td class="num neg">67 🔴</td><td class="num neg">833 🔴</td><td class="num">44.9 🟡</td><td class="num neg">805 🔴</td>
+<td class="num neg">1.09 🔴</td><td class="num neg">39.3 🔴</td><td class="num pos">14.4 🟢</td><td class="num neg">10.62 🟡</td><td class="num neg">0.60 🔴</td><td class="num neg">1,265 🔴</td>
+<td class="num neg">2 🔴</td><td class="num neg">59.3 🔴</td><td class="num neg">1.26 🔴</td><td class="num neg">2.04 🔴</td></tr>
+
+<tr><td><b>雏菊的天空</b></td><td>A</td><td class="num">1.64</td>
+<td class="num neg">201 🔴</td><td class="num neg">15 🔴</td><td class="num neg">733 🔴</td><td class="num pos">34.7 🟢</td><td class="num neg">751 🔴</td>
+<td class="num pos">2.77 🟢</td><td class="num pos">51.8 🟢</td><td class="num pos">16.0 🟢</td><td class="num pos">12.93 🟢</td><td class="num neg">0.33 🔴</td><td class="num neg">966 🔴</td>
+<td class="num neg">1 🔴</td><td class="num neg">53.1 🔴</td><td class="num neg">1.17 🔴</td><td class="num neg">1.64 🔴</td></tr>
+
+<tr><td><b>丸美</b></td><td>A</td><td class="num">1.57</td>
+<td class="num neg">305 🔴</td><td class="num neg">16 🔴</td><td class="num neg">1,069 🔴</td><td class="num">45.8 🟡</td><td class="num neg">1,161 🔴</td>
+<td class="num pos">2.39 🟢</td><td class="num pos">50.2 🟢</td><td class="num pos">17.7 🟢</td><td class="num pos">16.04 🟢</td><td class="num neg">0.38 🔴</td><td class="num neg">1,428 🔴</td>
+<td class="num neg">1 🔴</td><td class="num neg">46.2 🔴</td><td class="num neg">1.31 🔴</td><td class="num neg">1.57 🔴</td></tr>
+
+<tr><td><b>欧伯雅</b></td><td>A</td><td class="num">1.38</td>
+<td class="num neg">188 🔴</td><td class="num neg">15 🔴</td><td class="num neg">215 🔴</td><td class="num pos">32.2 🟢</td><td class="num neg">190 🔴</td>
+<td class="num pos">3.45 🟢</td><td class="num pos">56.4 🟢</td><td class="num pos">16.9 🟢</td><td class="num pos">16.54 🟢</td><td class="num pos">28.13 🟢</td><td class="num neg">278 🔴</td>
+<td class="num neg">2 🔴</td><td class="num neg">90.3 🔴</td><td class="num neg">0.86 🔴</td><td class="num neg">1.38 🔴</td></tr>
+
+<tr><td><b>柏瑞美</b></td><td>B</td><td class="num">0.88</td>
+<td class="num neg">166 🔴</td><td class="num neg">6 🔴</td><td class="num neg">529 🔴</td><td class="num">45.3 🟡</td><td class="num neg">551 🔴</td>
+<td class="num neg">0.86 🔴</td><td class="num neg">32.3 🔴</td><td class="num neg">8.5 🔴</td><td class="num neg">5.84 🔴</td><td class="num neg">0.36 🔴</td><td class="num neg">818 🔴</td>
+<td class="num neg">0 🔴</td><td class="num neg">38.1 🔴</td><td class="num neg">1.15 🔴</td><td class="num neg">0.88 🔴</td></tr>
+
+<tr><td><b>美尚</b></td><td>B</td><td class="num">0.61</td>
+<td class="num neg">346 🔴</td><td class="num neg">8 🔴</td><td class="num neg">515 🔴</td><td class="num pos">28.6 🟢</td><td class="num neg">519 🔴</td>
+<td class="num neg">1.78 🟡</td><td class="num neg">35.3 🔴</td><td class="num pos">15.1 🟢</td><td class="num neg">9.58 🟡</td><td class="num pos">1.12 🟢</td><td class="num neg">809 🔴</td>
+<td class="num neg">0 🔴</td><td class="num neg">23.6 🔴</td><td class="num pos">1.91 🟢</td><td class="num neg">0.61 🔴</td></tr>
+
+<tr><td><b>阿敏</b></td><td>B</td><td class="num">0.59</td>
+<td class="num neg">24 🔴</td><td class="num neg">0 🔴</td><td class="num neg">68 🔴</td><td class="num pos">33.7 🟢</td><td class="num neg">69 🔴</td>
+<td class="num pos">2.73 🟢</td><td class="num neg">37.9 🔴</td><td class="num neg">4.1 🔴</td><td class="num neg">7.20 🔴</td><td class="num pos">26.60 🟢</td><td class="num neg">74 🔴</td>
+<td class="num neg">1 🔴</td><td class="num pos">264.7 🟢</td><td class="num neg">0.00 🔴</td><td class="num neg">0.59 🔴</td></tr>
+
+<tr><td><b>浙江汇都</b></td><td>B</td><td class="num">0.48</td>
+<td class="num neg">124 🔴</td><td class="num neg">3 🔴</td><td class="num neg">426 🔴</td><td class="num pos">23.6 🟢</td><td class="num neg">467 🔴</td>
+<td class="num neg">1.42 🔴</td><td class="num neg">37.2 🔴</td><td class="num neg">12.7 🟡</td><td class="num neg">7.01 🔴</td><td class="num pos">0.86 🟢</td><td class="num neg">592 🔴</td>
+<td class="num neg">0 🔴</td><td class="num neg">31.8 🔴</td><td class="num neg">1.13 🔴</td><td class="num neg">0.48 🔴</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- ===== Part 5: 直播间数据复盘 ===== -->
+<div class="section">
+<div class="section-title"><span class="icon">5</span> 直播间数据复盘</div>
+
+<div class="grid-3" style="margin-bottom:4px">
+<div class="kpi-card"><div class="label">响当当·进播率</div><div class="value">1.75%</div><div class="vs">头部0.78% <span class="pos">+0.97pp ✅</span></div></div>
+<div class="kpi-card"><div class="label">响当当·商品点击率</div><div class="value">25.67%</div><div class="vs">头部61.39% <span class="neg">-35.72pp 🔴</span></div></div>
+<div class="kpi-card"><div class="label">响当当·下单率</div><div class="value">15.65%</div><div class="vs">头部17.15% <span class="neg">-1.50pp 🟡</span></div></div>
+</div>
+
+<div class="insight-red"><b>🔴 核心瓶颈：商品点击率</b>。响当当进播率1.75%远高于头部0.78%✅，但商品点击率25.67%仅为头部61.39%的41.8%🔴。进播→商品点击是最大漏斗断点，大量观众进入直播间后未点击商品→下单率虽接近头部但基数小。</div>
+
+<table>
+<thead><tr><th>品牌</th><th class="num">日均消耗<br>(万)</th><th class="num">进播率%</th><th class="num">商品点击率%</th><th class="num">下单率%</th><th>漏斗诊断</th></tr></thead>
+<tbody>
+<tr style="background:#EEF4FF;font-weight:700;font-size:7.5px"><td>赛道头部均值</td><td class="num">10.72</td><td class="num">0.78</td><td class="num">61.39</td><td class="num">17.15</td><td>—</td></tr>
+<tr><td><b>M3</b></td><td class="num">4.17</td><td class="num neg">0.26 🔴</td><td class="num pos">67.95 🟢</td><td class="num neg">11.94 🔴</td><td style="font-size:7.5px">进播率极低🔴→放量瓶颈；商品点击✅但下单率偏低</td></tr>
+<tr><td><b>卡姿兰</b></td><td class="num">2.68</td><td class="num pos">0.97 🟢</td><td class="num pos">82.74 🟢</td><td class="num neg">15.04 🟡</td><td style="font-size:7.5px">全链最优✅，进播+商品点击双高，下单率可再提升</td></tr>
+<tr><td><b>BABI</b></td><td class="num">2.04</td><td class="num neg">0.66 🔴</td><td class="num pos">62.66 🟢</td><td class="num pos">22.43 🟢</td><td style="font-size:7.5px">下单率最高✅，进播率偏低→提升进播可放量</td></tr>
+<tr><td><b>雏菊的天空</b></td><td class="num">1.64</td><td class="num neg">0.33 🔴</td><td class="num pos">77.58 🟢</td><td class="num neg">10.72 🔴</td><td style="font-size:7.5px">进播率低+下单率低双🔴→直播间选品/话术需优化</td></tr>
+<tr><td><b>丸美</b></td><td class="num">1.57</td><td class="num neg">0.38 🔴</td><td class="num neg">32.99 🔴</td><td class="num pos">22.29 🟢</td><td style="font-size:7.5px">商品点击率33%🔴远低头部61%→核心瓶颈，需优化商品展示</td></tr>
+<tr><td><b>欧伯雅</b></td><td class="num">1.38</td><td class="num pos">28.13 🟢</td><td class="num neg">5.04 🔴</td><td class="num neg">15.11 🟡</td><td style="font-size:7.5px">进播率极高但商品点击5%🔴极低→直播间选品/链接问题</td></tr>
+<tr><td><b>柏瑞美</b></td><td class="num">0.88</td><td class="num neg">0.36 🔴</td><td class="num pos">70.24 🟢</td><td class="num pos">19.19 🟢</td><td style="font-size:7.5px">商品点击+下单双✅，进播率偏低→提升可放量</td></tr>
+<tr><td><b>美尚</b></td><td class="num">0.61</td><td class="num pos">1.12 🟢</td><td class="num pos">77.36 🟢</td><td class="num">18.77 🟡</td><td style="font-size:7.5px">全链最均衡✅，可作为直播间运营标杆</td></tr>
+<tr><td><b>阿敏</b></td><td class="num">0.59</td><td class="num pos">26.60 🟢</td><td class="num neg">6.58 🔴</td><td class="num neg">9.11 🔴</td><td style="font-size:7.5px">同欧伯雅：进播极高但商品点击极低→直播间选品问题</td></tr>
+<tr><td><b>浙江汇都</b></td><td class="num">0.48</td><td class="num pos">0.86 🟢</td><td class="num neg">57.80 🟡</td><td class="num neg">6.28 🔴</td><td style="font-size:7.5px">下单率6.3%🔴最低→转化链路末端问题</td></tr>
+</tbody>
+</table>
+
+<div class="suggestion"><b>💡 直播间建议</b>：①<b>欧伯雅/阿敏</b>进播率>26%但商品点击<7%→紧急排查直播间商品链接/选品问题；②<b>丸美</b>商品点击33%远低头部61%→优化商品展示/弹窗策略；③<b>M3/雏菊</b>进播率<0.4%→提升直播封面吸引力+投放定向；④<b>卡姿兰/美尚</b>全链健康✅→加大直播间投放量。</div>
+</div>
+
+<!-- ===== Part 6: 智投数据 ===== -->
+<div class="section">
+<div class="section-title"><span class="icon">6</span> 智投使用情况 vs 赛道头部</div>
+<div class="note">响当当整体及头部均取客户简称维度均值；头部=日均≥3万客户简称维度均值</div>
+
+<div class="grid-4" style="margin-bottom:4px">
+<div class="kpi-card"><div class="label">响当当·智投渗透率</div><div class="value">29.60%</div><div class="vs">头部58.38% <span class="neg">-28.78pp 🔴</span></div></div>
+<div class="kpi-card"><div class="label">响当当·智投ROI出价</div><div class="value">1.74</div><div class="vs">头部1.97 <span class="neg">-0.23 🔴</span></div></div>
+<div class="kpi-card"><div class="label">响当当·智投项目数(户均)</div><div class="value">19.2</div><div class="vs">头部297.2 <span class="neg">-278 🔴</span></div></div>
+<div class="kpi-card"><div class="label">响当当·智投条均消耗</div><div class="value">880</div><div class="vs">头部3,094 <span class="neg">-2,214 🔴</span></div></div>
+</div>
+
+<div class="insight-red"><b>🔴 智投全面落后</b>：响当当智投渗透率29.6%仅为头部58.4%的一半🔴，户均项目数19.2 vs 头部297.2（仅6.5%），条均消耗880 vs 头部3,094（仅28.4%）。智投使用广度和深度均严重不足。</div>
+
+<table>
+<thead><tr><th>品牌</th><th class="num">日均消耗<br>(万)</th><th class="num">渗透率%</th><th class="num">ROI出价</th><th class="num">项目数</th><th class="num">条均消耗</th><th>智投诊断</th></tr></thead>
+<tbody>
+<tr style="background:#EEF4FF;font-weight:700;font-size:7.5px"><td>赛道头部均值</td><td class="num">10.72</td><td class="num">58.38</td><td class="num">1.97</td><td class="num">297</td><td class="num">3,094</td><td>—</td></tr>
+<tr><td><b>BABI</b></td><td class="num">2.04</td><td class="num pos">95.9 🟢</td><td class="num neg">1.649 🔴</td><td class="num neg">136 🔴</td><td class="num neg">1,089 🔴</td><td style="font-size:7.5px">渗透率极高✅但ROI出价+条均偏低→聚焦高消耗项目</td></tr>
+<tr><td><b>丸美</b></td><td class="num">1.57</td><td class="num pos">88.1 🟢</td><td class="num neg">1.527 🔴</td><td class="num neg">82 🔴</td><td class="num neg">1,567 🔴</td><td style="font-size:7.5px">渗透率高✅但ROI出价1.527偏低→提升至1.9+</td></tr>
+<tr><td><b>美尚</b></td><td class="num">0.61</td><td class="num pos">83.9 🟢</td><td class="num neg">1.946 🟡</td><td class="num neg">53 🔴</td><td class="num neg">936 🔴</td><td style="font-size:7.5px">渗透率+ROI出价双✅，条均消耗偏低需放量</td></tr>
+<tr><td><b>柏瑞美</b></td><td class="num">0.88</td><td class="num pos">78.1 🟢</td><td class="num neg">1.309 🔴</td><td class="num neg">28 🔴</td><td class="num neg">2,083 🔴</td><td style="font-size:7.5px">条均消耗高✅但ROI出价1.309远低于头部1.97🔴</td></tr>
+<tr><td><b>卡姿兰</b></td><td class="num">2.68</td><td class="num">74.5 🟡</td><td class="num pos">2.314 🟢</td><td class="num neg">63 🔴</td><td class="num neg">2,540 🟡</td><td style="font-size:7.5px">ROI出价+条均消耗均✅为最佳实践，渗透率可提升</td></tr>
+<tr><td><b>雏菊的天空</b></td><td class="num">1.64</td><td class="num">74.5 🟡</td><td class="num neg">1.588 🔴</td><td class="num neg">44 🔴</td><td class="num neg">2,371 🟡</td><td style="font-size:7.5px">条均消耗高✅但ROI出价偏低→提升至1.8+</td></tr>
+<tr><td><b>M3</b></td><td class="num">4.17</td><td class="num neg">46.4 🔴</td><td class="num neg">1.902 🟡</td><td class="num neg">132 🔴</td><td class="num neg">1,120 🔴</td><td style="font-size:7.5px">渗透率低🔴但ROI出价1.902接近头部→提升智投覆盖</td></tr>
+<tr><td><b>欧伯雅</b></td><td class="num">1.38</td><td class="num neg">45.5 🔴</td><td class="num neg">1.067 🔴</td><td class="num neg">20 🔴</td><td class="num neg">2,446 🟡</td><td style="font-size:7.5px">渗透率+ROI出价双低🔴，条均消耗高但项目少</td></tr>
+</tbody>
+</table>
+
+<div style="margin-top:3px;font-size:8.5px;font-weight:700;color:#296BEF">赛道头部品牌智投参考</div>
+<table>
+<thead><tr><th>头部品牌</th><th class="num">日均消耗(万)</th><th class="num">渗透率%</th><th class="num">ROI出价</th><th class="num">项目数</th><th class="num">条均消耗</th></tr></thead>
+<tbody>
+<tr><td><b>品牌A</b></td><td class="num">77.8</td><td class="num">65.2</td><td class="num">2.002</td><td class="num">421</td><td class="num">10,694</td></tr>
+<tr><td><b>品牌B</b></td><td class="num">12.5</td><td class="num pos">86.4</td><td class="num">2.035</td><td class="num">638</td><td class="num">1,609</td></tr>
+<tr><td><b>品牌C</b></td><td class="num">11.0</td><td class="num pos">76.3</td><td class="num">1.848</td><td class="num">391</td><td class="num">2,473</td></tr>
+<tr><td><b>品牌D</b></td><td class="num">10.7</td><td class="num">67.1</td><td class="num">2.029</td><td class="num">979</td><td class="num">621</td></tr>
+</tbody>
+</table>
+
+<div class="suggestion"><b>💡 智投建议</b>：①响当当整体渗透率29.6%远低头部58.4%→<b>首要任务：提升智投覆盖广告数</b>，尤其M3(46.4%)/欧伯雅(45.5%)；②整体ROI出价1.74低于头部1.97→<b>建议提升至1.9+对齐赛道</b>；③卡姿兰ROI出价2.314✅+条均2,540✅为最佳实践，可效仿；④丸美/雏菊ROI出价1.5-1.6偏低→<b>智投出价过保守限制了消耗放量</b>；⑤谷雨条均消耗10,694极高→聚焦培养头部项目。</div>
+</div>
+
+<!-- ===== Part 7: 分品牌行动建议 ===== -->
+<div class="section">
+<div class="section-title"><span class="icon">7</span> 分品牌行动建议</div>
+
+<div class="suggestion"><b>🔴 M3 — 完播率+进播率双低，CVR良好</b><br>
+• <b>勤奋度</b>：重复度37.6%🟢最健康，日均素材609/新广告72。<b>素材质量</b>：CTR 2.57%🟢但3秒完播35.2%🔴头部43.5%（-8.3pp），进播率0.26%🔴极低。<b>直播</b>：商品点击67.9%🟢但下单11.9%🔴。<b>智投</b>：渗透率46.4%🔴偏低，ROI出价1.902接近头部。<br>
+<b>建议</b>：①优化视频前3秒提升完播率至43%+ ②提升智投渗透率至60%+ ③进播率提升→消耗放量 ④直播间下单率优化</div>
+
+<div class="suggestion"><b>🔴 卡姿兰 — 重复度+完播率双底但ROI最高，降重即放量</b><br>
+• <b>勤奋度</b>：重复度50.4%🔴最高，日均素材233/新广告仅8。<b>素材质量</b>：3秒完播31.6%🔴+10秒完播9.1%🔴+CTR 1.61%🔴。<b>直播</b>：进播0.97%🟢+商品点击82.7%🟢全链最优。<b>智投</b>：ROI出价2.314🟢+条均2,540🟢为最佳实践。<br>
+<b>建议</b>：①5个ID下降重至40%以下→CTR回升→放量 ②优化完播率 ③智投策略可复用到其他品牌 ④直播间已健康✅→加大投放</div>
+
+<div class="suggestion"><b>🔴 丸美 — 素材质量✅但商品点击率🔴</b><br>
+• <b>素材质量</b>：3秒完播50.2%🟢+10秒完播17.7%🟢+CTR 2.39%🟢全面达标。<b>直播</b>：商品点击率33%🔴远低于头部61%。<b>智投</b>：渗透率88.1%🟢但ROI出价1.527偏低🔴。<br>
+<b>建议</b>：①优化直播间商品展示→商品点击率提升至60%+ ②智投ROI出价从1.527提升至1.8+ ③素材质量已达标→加大放量</div>
+
+<div class="suggestion"><b>🔴 雏菊的天空 — "高点击零转化"，落地页瓶颈</b><br>
+• <b>素材质量</b>全面✅：3秒完播51.8%🟢+CTR 2.77%🟢+重复度34.7%🟢。但<b>ROI 1.17🔴</b>极低。<b>直播</b>：进播0.33%🔴+下单10.7%🔴。<b>智投</b>：条均2,371🟢高但ROI出价1.588偏低🔴。<br>
+<b>建议</b>：①紧急排查落地页/产品定价/人群定向 ②智投ROI出价提升至1.8+ ③素材质量已达S级水平，加大放量 ④直播间进播+下单双低需优化</div>
+
+<div class="suggestion"><b>🔴 欧伯雅 — CPM极高+直播间选品问题</b><br>
+• 素材质量全面✅但<b>进播率28.1%极高+商品点击5%🔴极低</b>。智投渗透率45.5%🔴+ROI出价1.067🔴。<br>
+<b>建议</b>：①紧急排查直播间商品链接/选品问题 ②提升智投渗透率+ROI出价 ③降低CPM至合理水平</div>
+
+<div class="suggestion"><b>🟢 美尚 — 全链最健康，可作为运营标杆</b><br>
+• 重复度28.6%🟢+ROI 1.91🟢+进播1.12%🟢+商品点击77.4%🟢+智投渗透率83.9%🟢+ROI出价1.946🟢。<b>唯一短板</b>：3秒完播35.3%🔴偏低。<br>
+<b>建议</b>：优化前3秒→完播率43%+→CPM下降→消耗进一步放量。运营策略可复制到其他品牌。</div>
+
+</div>
+</div>
+<script>(function(){var _h=0,_t;function m(){var b=document.body;if(!b)return 0;return Math.max(b.scrollHeight,b.offsetHeight,Math.ceil(b.getBoundingClientRect().height))}function s(){var h=m();if(h>0&&h!==_h){_h=h;window.parent.postMessage({type:"iframe-resize",height:h},"*")}}function d(){clearTimeout(_t);_t=setTimeout(s,150)}if(document.readyState==="complete")s();else window.addEventListener("load",s);window.addEventListener("resize",d);if(typeof ResizeObserver!=="undefined"){var ro=new ResizeObserver(d);ro.observe(document.documentElement);if(document.body)ro.observe(document.body)}})();</script><style id="__adata_wm_style__">.__adata_wm__{position:fixed;inset:0;pointer-events:none;z-index:2147483647;background-repeat:repeat;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='160'><text x='50%' y='50%' fill='rgba(0,0,0,0.08)' font-size='14' font-family='-apple-system,Segoe UI,sans-serif' text-anchor='middle' transform='rotate(-25 120 80)'>sunniexli</text></svg>")}</style><div class="__adata_wm__" aria-hidden="true"></div></body>
+</html>
